@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 
 
 const useDarkMode = () => {
-    const [ darkMode, setDarkMode ] = useState('dark')
+    const [ darkMode, setDarkMode ] = useState(true)
     useEffect(() => {
         darkMode 
         ? document.querySelector("body").classList.add("dark-mode")
