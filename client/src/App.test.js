@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Header from "./components/Header"
+import PlayerCard from "./components/PlayerCard"
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+
+test('component renders without crashing,', () => {
+  ReactDOM.render(<Header />)
+})
+
+test('playercard renders without crashing', () => {
+  ReactDOM.render(<PlayerCard />)
+})
