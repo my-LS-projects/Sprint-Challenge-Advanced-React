@@ -4,10 +4,11 @@ import axios from "axios"
 
 // components
 import { PlayerCard } from "./components/PlayerCard"
+import Header from "./components/Header"
 
 
 
-const logo = 'https://cdn-images-1.medium.com/fit/c/120/120/1*iTABE417EkZDwRv9Uj91Qg.png'
+
 
 class App extends React.Component {
   constructor() {
@@ -37,10 +38,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <div className="logo-wrapper"><img className="logo" src={logo}></img></div>
-          <h1 className="title">Women's World Cup</h1>
-          </header>
+        <Header />
         <section className="players">
           {this.state.players.map( player => 
             <PlayerCard playerName={player.name} country={player.country} searches={player.searches}/>

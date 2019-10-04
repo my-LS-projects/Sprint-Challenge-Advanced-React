@@ -39,6 +39,11 @@ header {
   align-items: center;
 }
 
+
+.dark-mode {
+  background-color: #000;
+}
+
 .logo {
   width: auto;
   max-height: 50px;
