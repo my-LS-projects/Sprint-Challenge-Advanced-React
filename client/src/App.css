@@ -31,3 +31,43 @@
     transform: rotate(360deg);
   }
 }
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.dark-mode {
+  background-color: #000;
+}
+
+.logo {
+  width: auto;
+  max-height: 50px;
+}
+
+.players {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+
+.player-card {
+  background-color: snow;
+  width: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.country {
+  font-style: italic;
+  color: grey;
+}
